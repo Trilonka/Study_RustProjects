@@ -2,7 +2,6 @@ fn main() {
     println!("Far to cel: {}", far_to_cel(-54.5));
     let n = 13;
     println!("Fibonacci {}: {}", n, fibonacci(n));
-    
 }
 
 fn far_to_cel(f: f32) -> f32 {
