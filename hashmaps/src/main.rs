@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std::iter::Iterator;
 
 fn main() {
     let mut scores = HashMap::new();
@@ -35,4 +36,4 @@ fn main() {
         *count += 1;
     }
     println!("{:?}", map);
-}   
+}

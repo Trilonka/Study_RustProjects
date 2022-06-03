@@ -24,17 +24,6 @@ fn first(v: &mut Vec<i32>) -> (f32, i32, i32) {
     (average, mediane, mode)
 }
 
-<<<<<<< HEAD
-fn second(s: &str) -> String {
-    let c = s[0..1].chars();
-
-    let list = ['a', 'e', 'i', 'o', 'u', 'y'];
-    if list.contains(c.next()) {
-
-    }
-    return String::from("hi")
-}
-=======
 fn second(word: &str) -> String {
     let vowels = [ 'a', 'e', 'i', 'o', 'u', 'y'];
     if let Some(s) = word.get(0..1) {
@@ -51,4 +40,3 @@ fn second(word: &str) -> String {
 }
 
 fn third() {}
->>>>>>> 74ee48e8358231f91b5387871a71f0e3eda089fe
