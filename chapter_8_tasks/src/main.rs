@@ -23,3 +23,20 @@ fn first(v: &mut Vec<i32>) -> (f32, i32, i32) {
 
     (average, mediane, mode)
 }
+
+fn second(word: &str) -> String {
+    let vowels = [ 'a', 'e', 'i', 'o', 'u', 'y'];
+    if let Some(s) = word.get(0..1) {
+        if s.contains(vowels) {
+            return format!("{}-hay", word)
+        }
+        return if let Some(wor) = word.get(1..word.len()) {
+            format!("{}-{}ay", wor, s)
+        } else {
+            format!("-{}ay", s)
+        }
+    }
+    "".to_string()
+}
+
+fn third() {}
