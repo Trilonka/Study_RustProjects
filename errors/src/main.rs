@@ -63,7 +63,7 @@ fn last_char_of_first_line(text: &str) -> Option<char> {
 }
 
 // fn main() -> Result<(), Box<dyn Error>> { // main может возвращать    Result<(), E>      !!!
-//     let greeting_file = file::open("hello.txt")?;
+//     let greeting_file = file::open("hello.txt")?; // ? вернет объект или result / option
 
 //     Ok(())
 // }
