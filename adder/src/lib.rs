@@ -47,6 +47,21 @@ mod tests {
     fn greater_than_100() {
         Guess::new(200);
     }
+
+    #[test]
+    fn it_works() -> Result<(), String> { // we can use Result
+        if 2 + 2 == 4 {
+            Ok(())
+        } else {
+            Err(String::from("two plus two is four"))
+        }
+    }
+
+    #[test]
+    #[ignore]
+    fn expensive_test() {
+        panic!("Expensive test!"); // this test will be ignored
+    }
 }
 
 #[derive(Debug)]
@@ -61,7 +76,7 @@ impl Rectangle {
     }
 }
 
-fn add_two(a: i32) -> i32 {
+pub fn add_two(a: i32) -> i32 {
     a + 2
 }
 
